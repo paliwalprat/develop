@@ -13,6 +13,7 @@ func IsAuthenticated(c *fiber.Ctx) error {
 		return c.JSON(fiber.Map{
 			"message": "Unauthenticated",
 		})
+
 	}
 	return c.Next()
 
